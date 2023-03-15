@@ -49,7 +49,7 @@ function rememberMyFilms() {
   }
 }
 
-// rememberMyFilms();
+rememberMyFilms();
 
 
 function detectPersonalLevel() {
@@ -64,7 +64,7 @@ function detectPersonalLevel() {
   }
 }
 
-// detectPersonalLevel();
+detectPersonalLevel();
 
 function showMyDB(hidden) {
   if(!hidden) {
@@ -74,4 +74,10 @@ function showMyDB(hidden) {
 
 showMyDB(personalMovieDB.privat);
 
-s
+function writeYourGenres() {
+  for (let i = 1; i <= 3; i++) {
+    personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
+  }
+}
+
+writeYourGenres()
